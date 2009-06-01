@@ -22,7 +22,7 @@
 
 /**
  * Idle timer
- * @module idletimer
+ * @module idle-timer
  */
 YUI.add("idle-timer", function(Y){
 
