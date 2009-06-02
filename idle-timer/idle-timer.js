@@ -10,14 +10,14 @@ YUI.add("idle-timer", function(Y){
     
     var idle    = false,        //indicates if the user is idle
         tId     = -1,           //timeout ID
-        enabled  = false,        //indicates if the idle timer is enabled
+        enabled = false,        //indicates if the idle timer is enabled
         timeout = 30000;        //the amount of time (ms) before the user is considered idle
 
     //-------------------------------------------------------------------------
     // Private functions
     //-------------------------------------------------------------------------
         
-    /** (intentionally not document)
+    /* (intentionally not documented)
      * Handles a user event indicating that the user isn't idle.
      * @param {Event} event A DOM2-normalized event object.
      * @return {void}
@@ -40,6 +40,10 @@ YUI.add("idle-timer", function(Y){
         }    
     }
     
+    /* (intentionally not documented)
+     * Toggles the idle state and fires an appropriate event.
+     * @return {void}
+     */
     function toggleIdleState(){
     
         //toggle the state
