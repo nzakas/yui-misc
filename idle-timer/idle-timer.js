@@ -55,10 +55,10 @@ YUI.add("idle-timer", function(Y){
             //if it's idle, that means the user is no longer idle
             if (idle){
                 toggleIdleState();           
-            } else {
-                //set a new timeout
-                tId = setTimeout(toggleIdleState, timeout);
-            }
+            } 
+
+            //set a new timeout
+            tId = setTimeout(toggleIdleState, timeout);
         }    
     }
     
